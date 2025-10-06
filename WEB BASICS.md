@@ -39,31 +39,29 @@ A website works through **3 main layers**:
 7. **Browser renders page** – Your browser takes those files, builds the webpage, executes JavaScript, and displays it to you.
 
 
-![[Screenshot 2025-09-05 153042.png]]
-
 
 # 1.4 Important Technical Details
 
 Here are the **building blocks of how websites work**:
-### 1. **Frontend (Client Side)**
+### a.) **Frontend (Client Side)**
 - Languages: **HTML (structure), CSS (style), JS (functionality)**.
 - Runs on your browser.
 - Responsible for how the website looks and basic interactions.
 
-### 2. **Backend (Server Side)**
+### b.) **Backend (Server Side)**
 - Languages: **Python (Django/Flask), PHP, Java (Spring), Node.js, Ruby, .NET**, etc.
 - Handles logic, authentication, databases, APIs.
 - Example: When you log in, backend checks if your password matches.
 
-### 3. **Databases**
+### c.) **Databases**
 - Store data: MySQL, PostgreSQL, MongoDB, Oracle, etc.
 - Example: Your username and password are stored (hopefully hashed).
 
-### 4. **DNS (Domain Name System)**
+### d.) **DNS (Domain Name System)**
 - Converts domain names (`facebook.com`) into IP addresses (`157.240.1.35`).
 - Like a phonebook of the internet.
 
-### 5. **HTTP / HTTPS**
+### e.) **HTTP / HTTPS**
 - **HTTP** = Hypertext Transfer Protocol (insecure).
 - **HTTPS** = HTTP + TLS/SSL encryption (secure).
 - Requests have **methods**:
@@ -72,21 +70,21 @@ Here are the **building blocks of how websites work**:
     - `PUT` / `PATCH` → Update data
     - `DELETE` → Remove data
 
-### 6. **Web Servers**
+### f.) **Web Servers**
 - Handle client requests and serve responses.
 - Examples: Apache, Nginx, Microsoft IIS.
 
-### 7. **APIs (Application Programming Interfaces)**
+### g.) **APIs (Application Programming Interfaces)**
 - Allow apps/websites to talk to each other.
 - Example: A weather website fetching live weather data from an API.
 
-### 8. **Cookies & Sessions**
+### h.) **Cookies & Sessions**
 - **Cookie** = Small piece of data stored in the browser.
 - **Session** = Server-side record linked with session ID.
 - Used for logins, preferences, tracking.  
     👉 This is why _session hijacking_ is a real attack.
 
-### 9. **Client vs. Server Execution**
+### i.) **Client vs. Server Execution**
 - Client = Browser executes **JavaScript**.
 - Server = Executes backend code, interacts with DB.
 - Example:
@@ -132,8 +130,6 @@ Example: You type `www.example.com` in the browser.
     - Resolver caches the answer for future use.
     - Browser gets IP → makes a direct connection to the website.
     
-
-![[ChatGPT Image Sep 5, 2025, 04_02_28 PM.png]]
 
 ## Security Threats Shown in this Diagram :- 
 
@@ -311,7 +307,6 @@ DNS = **translator between human-friendly domains and machine IPs**, with **reco
      - A URL is predominantly an instruction on how to access a resource on the internet.
     - Example: 
     
-    ![[Pasted image 20250910000054.png]]
       
       - **Scheme:** This instructs on what protocol to use for accessing the resource such as HTTP, HTTPS, FTP (File Transfer Protocol).
       - **User:** Some services require authentication to log in, we can put a username and password into the URL to log in.
